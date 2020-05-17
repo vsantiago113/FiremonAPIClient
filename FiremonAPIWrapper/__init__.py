@@ -3,7 +3,7 @@ import requests
 import json
 
 
-class Client(APIPlugin):
+class Wrapper(APIPlugin):
     headers = {'Content-Type': 'application/json'}
     base_url = None
     token = None

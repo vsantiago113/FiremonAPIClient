@@ -1,6 +1,6 @@
 # API-Wrapper-Boilerplate
 
-An API Wrapper for Firemon to be able to easily use the API in a more standar way.
+An API Wrapper for Firemon to be able to easily use the API in a more standard way.
 
 ## How to install
 ```ignorelang
@@ -11,16 +11,16 @@ $ pip install FiremonAPIWrapper
 
 #### Import and instantiate the class
 ```python
-from FiremonAPIWrapper import Client
+from FiremonAPIWrapper import Wrapper
 
-client = Client(verify=False, warnings=False, api_version='v1')
+client = Wrapper(verify=False, warnings=False, api_version='v1')
 ```
 
 #### Connect and Disconnect
 ```python
-from FiremonAPIWrapper import Client
+from FiremonAPIWrapper import Wrapper
 
-client = Client(verify=False)
+client = Wrapper(verify=False)
 
 client.connect(url='http://127.0.0.1:5000', username='admin', password='Admin123')
 
