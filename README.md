@@ -1,4 +1,9 @@
-# API-Wrapper-Boilerplate
+# FiremonAPIWrapper
+![PyPI - Status](https://img.shields.io/pypi/status/FiremonAPIWrapper)
+![PyPI - Format](https://img.shields.io/pypi/format/FiremonAPIWrapper)
+![GitHub](https://img.shields.io/github/license/vsantiago113/Firemon-API-Wraper)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/vsantiago113/Firemon-API-Wraper)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/FiremonAPIWrapper)
 
 An API Wrapper for Firemon to be able to easily use the API in a more standard way.
 
