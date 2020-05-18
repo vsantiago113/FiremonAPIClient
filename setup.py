@@ -1,4 +1,4 @@
-from distutils.core import setup
+from setuptools import setup
 
 with open('README.md', 'r') as f:
     long_description = f.read()
@@ -19,7 +19,7 @@ setup(
     python_requires='>=3.4.0',
     install_requires=[
         'requests',
-        'urllib3',
+        'urllib3'
     ],
     classifiers=[
         'Development Status :: 5 - Production/Stable',
