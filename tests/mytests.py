@@ -42,7 +42,7 @@ def run_full_test():
         print(f'***** Testing: PUT method by a updating the group description '.ljust(60, '*'))
         response = client.put(method=f'/domain/{domain_id}/usergroup/{group_data.get("id")}', domainId=domain_id,
                               id=group_data.get('id'), data={"id": group_data.get('id'), "domainId": domain_id,
-                                                             "name": "mytestgroup",
+                                                             "name": test_group,
                                                              "description": "This group is a test and it has been "
                                                                             "updated and can be deleted"})
         if response.status_code == 204:
@@ -103,7 +103,7 @@ class TestFiremonAPIWrapper(unittest.TestCase):
         group_id = response.json().get('id')
 
         response = client.put(method=f'/domain/{domain_id}/usergroup/{group_id}', domainId=domain_id, id=group_id,
-                              data={"id": group_id, "domainId": domain_id, "name": "mytestgroup",
+                              data={"id": group_id, "domainId": domain_id, "name": group_name,
                                     "description": "This group is a test and it has been updated and can be deleted"})
         self.assertEqual(response.status_code, 204)
 
