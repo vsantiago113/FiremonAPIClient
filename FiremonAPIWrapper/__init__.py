@@ -13,7 +13,7 @@ class Wrapper(APIPlugin):
         response = requests.post(f'{self.base_url}/authentication/login', data=json.dumps({'username': username,
                                                                                            'password': password}),
                                  headers=self.headers, verify=self.verify)
-        if response.status_code in [200, 202, 204]:
+        if response.status_code == 200:
             token = response.json().get('token')
             self.headers = {'Content-Type': 'application/json', 'X-FM-AUTH-Token': token}
             self.token = token

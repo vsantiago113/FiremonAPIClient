@@ -18,6 +18,7 @@ client = Wrapper(verify=False, warnings=False, api_version='v1')
 
 client.get(url=None, method='', data=None, auth = None)
 
+# client.headers
 # client.url_base
 # client.token
 
