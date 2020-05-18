@@ -14,7 +14,7 @@ setup(
     author='Victor M Santiago',
     author_email='vsantiago113sec@gmail.com',
     url='https://github.com/vsantiago113/Firemon-API-Wraper',
-    download_url='',
+    download_url='https://github.com/vsantiago113/Firemon-API-Wraper/archive/0.0.1.tar.gz',
     keywords=['Firemon', 'Wrapper'],
     python_requires='>=3.4.0',
     install_requires=[
