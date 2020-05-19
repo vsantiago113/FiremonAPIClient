@@ -1,9 +1,9 @@
-from FiremonAPIWrapper.api_interface import APIPlugin
+from FiremonAPIClient.api_interface import APIPlugin
 import requests
 import json
 
 
-class Wrapper(APIPlugin):
+class Client(APIPlugin):
     headers = {'Content-Type': 'application/json'}
     base_url = None
     token = None

@@ -1,15 +1,15 @@
-# FiremonAPIWrapper
-![PyPI - Status](https://img.shields.io/pypi/status/FiremonAPIWrapper)
-![PyPI - Format](https://img.shields.io/pypi/format/FiremonAPIWrapper)
-![GitHub](https://img.shields.io/github/license/vsantiago113/Firemon-API-Wraper)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/vsantiago113/Firemon-API-Wraper)
-![PyPI - Python Version](https://img.shields.io/pypi/pyversions/FiremonAPIWrapper)
+# FiremonAPIClient
+![PyPI - Status](https://img.shields.io/pypi/status/FiremonAPIClient)
+![PyPI - Format](https://img.shields.io/pypi/format/FiremonAPIClient)
+![GitHub](https://img.shields.io/github/license/vsantiago113/FiremonAPIClient)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/vsantiago113/FiremonAPIClient)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/FiremonAPIClient)
 
-An API Wrapper for Firemon to be able to easily use the API in a more standard way.
+An API Client for Firemon to be able to easily use the API in a more standard way.
 
 ## How to install
 ```ignorelang
-$ pip install FiremonAPIWrapper
+$ pip install FiremonAPIClient
 ```
 
 ## Usage
@@ -17,9 +17,9 @@ the argument "method" must be specify everytime. Look at authentication validati
 
 #### Default arguments and attributes
 ```python
-from FiremonAPIWrapper import Wrapper
+import FiremonAPIClient
 
-client = Wrapper(verify=False, warnings=False, api_version='v1')
+client = FiremonAPIClient.Client(verify=False, warnings=False, api_version='v1')
 
 client.get(url=None, method='', data=None, auth = None)
 
@@ -31,17 +31,17 @@ client.get(url=None, method='', data=None, auth = None)
 
 #### Import and instantiate the class
 ```python
-from FiremonAPIWrapper import Wrapper
+import FiremonAPIClient
 
-client = Wrapper()
+client = FiremonAPIClient.Client()
 ```
 
 #### Connect, Validate authentication and Disconnect
 ```python
-from FiremonAPIWrapper import Wrapper
+import FiremonAPIClient
 import json
 
-client = Wrapper()
+client = FiremonAPIClient.Client()
 
 client.connect(url='https://firemon-server.local', username='admin', password='Admin123')
 
@@ -53,10 +53,10 @@ client.disconnect()
 
 #### How to get an object
 ```python
-from FiremonAPIWrapper import Wrapper
+import FiremonAPIClient
 import json
 
-client = Wrapper()
+client = FiremonAPIClient.Client()
 client.connect(url='https://firemon-server.local', username='admin', password='Admin123')
 
 domain_id = 1
@@ -69,10 +69,10 @@ client.disconnect()
 
 #### How to create an object
 ```python
-from FiremonAPIWrapper import Wrapper
+import FiremonAPIClient
 import json
 
-client = Wrapper()
+client = FiremonAPIClient.Client()
 client.connect(url='https://firemon-server.local', username='admin', password='Admin123')
 
 domain_id = 1
@@ -86,10 +86,9 @@ client.disconnect()
 
 #### How to update an object
 ```python
-from FiremonAPIWrapper import Wrapper
-import json
+import FiremonAPIClient
 
-client = Wrapper()
+client = FiremonAPIClient.Client()
 client.connect(url='https://firemon-server.local', username='admin', password='Admin123')
 
 domain_id = 1
@@ -105,10 +104,9 @@ client.disconnect()
 
 #### How to delete an object
 ```python
-from FiremonAPIWrapper import Wrapper
-import json
+import FiremonAPIClient
 
-client = Wrapper()
+client = FiremonAPIClient.Client()
 client.connect(url='https://firemon-server.local', username='admin', password='Admin123')
 
 domain_id = 1

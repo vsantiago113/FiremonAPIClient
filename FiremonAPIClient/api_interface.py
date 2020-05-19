@@ -9,7 +9,7 @@ class APIPlugin(metaclass=ABCMeta):
     def __init__(self, verify: bool = False, warnings: bool = False, api_version: [str, bytes] = 'v1'):
         """
         The APIPlugin is the foundation to creating API Plugins from many different vendors. The APIPlugin help you
-        create the most dynamic API Wrapper possible with minimal coding in few different ways. The APIPlugin is design
+        create the most dynamic API client possible with minimal coding in few different ways. The APIPlugin is design
         to work with the RESTful API designs most used by developers specially in the Network Field.
         :param verify: SSL Cert verification, default to False to not verify SSL Cert.
         :param warnings: Request Warnings, default to False to disable all warnings.

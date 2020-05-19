@@ -1,4 +1,4 @@
-from FiremonAPIWrapper import Wrapper
+import FiremonAPIClient
 import unittest
 import os
 import json
@@ -12,7 +12,7 @@ domain_id = 1
 def run_full_test():
     test_group = 'mytestgroup'
 
-    client = Wrapper()
+    client = FiremonAPIClient.Client()
 
     print(f'***** Testing: Login '.ljust(60, '*'))
     response = client.connect(url, username, password)
@@ -80,7 +80,7 @@ def run_full_test():
 class TestFiremonAPIWrapper(unittest.TestCase):
 
     def test_authentication(self):
-        client = Wrapper()
+        client = FiremonAPIClient.Client()
 
         response = client.connect(url, username, password)
         self.assertEqual(response.status_code, 200)
@@ -94,7 +94,7 @@ class TestFiremonAPIWrapper(unittest.TestCase):
     def test_methods_get_put_post_delete(self):
         group_name = 'mytestgroup'
         
-        client = Wrapper()
+        client = FiremonAPIClient.Client()
         client.connect(url, username, password)
 
         response = client.post(method=f'/domain/{domain_id}/usergroup', domainId=domain_id, data={

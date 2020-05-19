@@ -4,18 +4,18 @@ with open('README.md', 'r') as f:
     long_description = f.read()
 
 setup(
-    name='FiremonAPIWrapper',
-    packages=['FiremonAPIWrapper'],
+    name='FiremonAPIClient',
+    packages=['FiremonAPIClient'],
     version='0.0.1',
     license='MIT',
-    description='An API Wrapper to use Firemon RESTful API.',
+    description='An API Client to use Firemon RESTful API.',
     long_description=long_description,
     long_description_content_type='text/markdown',
     author='Victor M Santiago',
     author_email='vsantiago113sec@gmail.com',
-    url='https://github.com/vsantiago113/Firemon-API-Wraper',
-    download_url='https://github.com/vsantiago113/Firemon-API-Wraper/archive/0.0.1.tar.gz',
-    keywords=['Firemon', 'Wrapper'],
+    url='https://github.com/vsantiago113/FiremonAPIClient',
+    download_url='https://github.com/vsantiago113/FiremonAPIClient/archive/0.0.1.tar.gz',
+    keywords=['Firemon'],
     python_requires='>=3.4.0',
     install_requires=[
         'requests',
