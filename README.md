@@ -13,7 +13,7 @@ $ pip install FiremonAPIClient
 ```
 
 ## Usage
-the argument "method" must be specify everytime. Look at authentication validation for an example.
+The argument "method" must be specify everytime. Look at authentication validation for an example.
 
 #### Default arguments and attributes
 ```python
