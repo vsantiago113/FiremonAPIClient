@@ -74,7 +74,7 @@ class APIPlugin(metaclass=ABCMeta):
         return requests.request(http_method, url, headers=self.headers, verify=self.verify, json=data,
                                 auth=auth, params=kwargs)
 
-    def post(self, url: [str, None] = None, method: [str, bytes] = '', data: dict = None, auth: HTTPBasicAuth = None,
+    def post(self, url: [str, None] = None, method: [str, bytes] = '', data: [dict, list] = None, auth: HTTPBasicAuth = None,
              **kwargs) -> requests.Response:
         """
 
@@ -90,7 +90,7 @@ class APIPlugin(metaclass=ABCMeta):
         return requests.request(http_method, url, headers=self.headers, verify=self.verify, json=data,
                                 auth=auth, params=kwargs)
 
-    def put(self, url: [str, None] = None, method: [str, bytes] = '', data: dict = None, auth: HTTPBasicAuth = None,
+    def put(self, url: [str, None] = None, method: [str, bytes] = '', data: [dict, list] = None, auth: HTTPBasicAuth = None,
             **kwargs) -> requests.Response:
         """
 
@@ -106,7 +106,7 @@ class APIPlugin(metaclass=ABCMeta):
         return requests.request(http_method, url, headers=self.headers, verify=self.verify, json=data,
                                 auth=auth, params=kwargs)
 
-    def delete(self, url: [str, None] = None, method: [str, bytes] = '', data: dict = None, auth: HTTPBasicAuth = None,
+    def delete(self, url: [str, None] = None, method: [str, bytes] = '', data: [dict, list] = None, auth: HTTPBasicAuth = None,
                **kwargs) -> requests.Response:
         """
 
